@@ -13,4 +13,6 @@ jobs:
       - name: Badges - Readme
         uses: pemtajo/badge-readme@main
         with:       
-          CREDLY_USER: abdul-moeed.090864cb # optional, but default will use the same from github
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          BADGE_SIZE: 100
+          NUMBER_LAST_BADGES: 24 # optional, but default will use the same from github
